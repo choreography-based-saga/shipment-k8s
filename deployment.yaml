@@ -79,7 +79,7 @@ spec:
           periodSeconds: 3
         env:
           - name: POSTGRES_URL
-            value: "choreo-postgresql.choreography.svc.cluster.local:5432/shipment"
+            value: "db-instance-choreography.chc66iy8gi9u.eu-central-1.rds.amazonaws.com:5432/shipment"
           - name: POSTGRES_PASS
             valueFrom:
               secretKeyRef:
@@ -87,5 +87,3 @@ spec:
                 key: db-pass
           - name: KAFKA_BROKER
             value: "choreo-kafka.choreography.svc.cluster.local:9092"
-      imagePullSecrets:
-        - name: ecr-key
