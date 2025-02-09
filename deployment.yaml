@@ -86,4 +86,13 @@ spec:
                 name: dbpass
                 key: db-pass
           - name: KAFKA_BROKER
-            value: "choreo-kafka.choreography.svc.cluster.local:9092"
+            value: "b-1.choreographymsk.jaquu7.c8.kafka.eu-central-1.amazonaws.com:9092"
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: dbpass
+  namespace: choreography
+type: Opaque
+data:
+  db-pass: "cm9vdF9wb3N0Z3Jlc19wYXNz"
