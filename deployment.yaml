@@ -86,7 +86,7 @@ spec:
                 name: dbpass
                 key: db-pass
           - name: KAFKA_BROKER
-            value: "b-1.choreographymsk.jaquu7.c8.kafka.eu-central-1.amazonaws.com:9092"
+            value: "b-1.choreographymsk.p93a1i.c8.kafka.eu-central-1.amazonaws.com:9092"
 ---
 apiVersion: v1
 kind: Secret
