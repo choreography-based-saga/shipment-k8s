@@ -51,7 +51,7 @@ spec:
     spec:
       containers:
       - name: shipment-app
-        image: 211125719632.dkr.ecr.eu-central-1.amazonaws.com/saga-choreography:shipment-1afbe42
+        image: 211125719632.dkr.ecr.eu-central-1.amazonaws.com/saga-choreography:shipment-1ab6302
         imagePullPolicy: Always
         ports:
           - containerPort: 8080
